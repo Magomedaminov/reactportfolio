@@ -1,13 +1,17 @@
 import React from 'react';
-import './header.css'
+import './header.scss';
 
 
-function header () {
+function Header () {
     return (
         <div className='header'>
-            
+            <ul>
+                <li>Home</li>
+                <li>Education</li>
+                <li>Portfolio</li>
+            </ul>
         </div>
     )
 }
 
-export default header;
+export default Header;
