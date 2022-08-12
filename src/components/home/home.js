@@ -1,8 +1,10 @@
 import React from "react";
+
 import './home.scss';
+
 import myImage from '../../image/myImage.png';
 
-function Home () {
+const Home = () => {
     return (
         <div className="home container">
             <div className="home__about">
