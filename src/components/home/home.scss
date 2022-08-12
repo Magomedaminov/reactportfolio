@@ -27,8 +27,10 @@
         }
 
     }
-    &__img {
-        width: 350px;
-        height: 350px;
-    }
+}
+
+.my-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
 }

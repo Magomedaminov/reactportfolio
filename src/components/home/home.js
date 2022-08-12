@@ -1,5 +1,6 @@
 import React from "react";
-import './home.scss'
+import './home.scss';
+import myImage from '../../image/myImage.png';
 
 function Home () {
     return (
@@ -11,7 +12,7 @@ function Home () {
                 </p>
                 {/* <button>Let’s get started</button> */}
             </div>
-            <div className="home__img"></div>
+            <img src={myImage} alt="myImage" className="my-image"/>
         </div>
     )
 }
