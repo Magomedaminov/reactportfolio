@@ -7,10 +7,15 @@
     color: #9C9C9C;
     padding: 21px;
     box-sizing: border-box;
+    
     ul {
         list-style-type: none;
         margin: 0;
         display: flex;
         justify-content: space-around;
     } 
+}
+
+.selected {
+    color:aliceblue;
 }

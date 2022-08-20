@@ -1,15 +1,22 @@
 import React from 'react';
-import './header.scss';
+import './Header.scss';
+import {FaReact} from 'react-icons/fa';
+import {Link, NavLink} from 'react-router-dom';
 
 
-function Header () {
+const Header = () => {
     return (
         <div className='header'>
+            <nav>
+            <Link to={'/'}>
+                <FaReact size={30}/>
+            </Link>
             <ul>
-                <li>Home</li>
-                <li>Education</li>
-                <li>Portfolio</li>
+                <NavLink exact to={'/'}><li>Home</li></NavLink>
+                <NavLink exact to={'/education'}><li>Education</li></NavLink>
+                <NavLink exact to={'/portfolio'}><li>Portfolio</li></NavLink>
             </ul>
+            </nav>
         </div>
     )
 }

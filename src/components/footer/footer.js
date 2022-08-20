@@ -1,6 +1,6 @@
 import React from "react";
 
-import './footer.scss';
+import './Footer.scss';
 
 import github from '../../icons/github.png';
 import linkedin from '../../icons/linkedin.png';
