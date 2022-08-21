@@ -8,4 +8,5 @@
 
 .container {
   width: 950px;
+  flex: 1 0 auto;
 }
