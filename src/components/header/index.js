@@ -38,12 +38,13 @@ const Header = () => {
     };
 
     return (
-        <div className='header'>
-            <nav className='navbar'>
-            <Link to={'/'} className="navbar__logo">
-                <FaReact size={30}/>
-            </Link>
-            <ul className='navbar__menu'>
+        <nav className='navbar'>
+            <div className='navbar__container'>
+                <Link to={'/'} className="navbar__logo">
+                    <FaReact size={30}/>
+                </Link>
+            </div>
+            <ul className={`navbar__menu ${toggleIcon ? 'active' : ''}`}>
                 {
                     data.map((item, key) => (
                         <li key={key} className='navbar__menu__item'>
@@ -54,13 +55,12 @@ const Header = () => {
                     ))
                 }
             </ul>
-            <div className='navbar__icon' onclick={handleToggleIcon}>
+            <div className='navbar__icon' onClick={handleToggleIcon}>
                 {
                     toggleIcon ? <HiX size={30}/> : <FaBars size={30}/>
                 }
             </div>
-            </nav>
-        </div>
+        </nav>
     )
 }
 
