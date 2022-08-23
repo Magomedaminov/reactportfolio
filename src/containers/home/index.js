@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Home.scss';
+import './home.scss';
 
 import myImage from '../../image/myImage.png';
 
