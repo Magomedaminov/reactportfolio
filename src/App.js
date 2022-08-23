@@ -9,6 +9,7 @@ import Education from './components/education/Education';
 import Portfolio from './components/portfolio/Portfolio';
 import Footer from './components/footer/Footer';
 
+
 function App() {
   return (
     <Router>
