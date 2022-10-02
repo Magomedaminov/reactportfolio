@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import './App.css';
 
@@ -15,11 +15,17 @@ import Footer from './components/footer';
 
 function App() {
 
+  const location = useLocation();
+
+  const renderParticleJsInHomePage = location.pathname === "/";
+
 
   return (
     <div className='App'>
-
-      <ParticleBackground/>
+      {renderParticleJsInHomePage && (
+        <ParticleBackground/>
+      )}
+      
       <Header/>
       <Routes>
         <Route index path='/' element={<Home/>}/>
