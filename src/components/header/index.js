@@ -4,7 +4,7 @@ import {FaBars, FaReact} from 'react-icons/fa';
 import {HiX} from 'react-icons/hi'
 import {Link,} from 'react-router-dom';
 
-import './header.scss';
+import './styles.scss';
 
 const data = [
     {
