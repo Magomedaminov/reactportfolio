@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-import './App.css';
+import './App.scss';
 
 import ParticleBackground from './components/particles/particleBackground';
 import Header from './components/header';
@@ -27,14 +27,16 @@ function App() {
       )}
       
       <Header/>
-      <Routes>
-        <Route index path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/skills' element={<Skills/>}/>  
-        <Route path='/portfolio' element={<Portfolio/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
-      <Footer/>
+      <div className='App__main-page-content'>
+        <Routes>
+          <Route index path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/skills' element={<Skills/>}/>  
+          <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </div>
+      {/* <Footer/> */}
     </div>
   )
 }
