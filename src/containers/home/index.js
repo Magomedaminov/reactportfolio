@@ -54,7 +54,7 @@ const Home = () => {
                         <div className="home__about__social">
                             {
                                 socialData.map((item, i) => (
-                                    <a key={i} href={item.link} target="_blank">
+                                    <a key={i} href={item.link} target="_blank" rel="noreferrer">
                                         {<item.image size={50}/>}
                                     </a>
                                 ))
