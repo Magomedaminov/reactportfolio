@@ -1,17 +1,36 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import './styles.scss';
+import { SiGithub, SiCodewars, SiLinkedin} from "react-icons/si";
 
 
 
 const Home = () => {
+    const socialData = [
+        {
+            image: SiGithub,
+            link: "https://github.com/Magomedaminov",
+        },
+        {
+            image: SiLinkedin,
+            link: "https://www.linkedin.com/in/magomedaminov/",
+        },
+        {
+            image: SiCodewars,
+            link: "https://www.codewars.com/users/MagomedaminovD",
+        },
+        // {
+        //     image: SiUdemy,
+        //     link: "https://www.udemy.com/user/denis-magomedaminov/",
+        // }
+    ];
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleNavToContactPage = () => {
-        navigate("/contact")
-    }
+    // const handleNavToContactPage = () => {
+    //     navigate("/contact")
+    // }
 
     return (
         <div className="home">
@@ -32,7 +51,17 @@ const Home = () => {
                             transform: 'translateX(0px)'
                         }}
                     >
-                        <button onClick={handleNavToContactPage}>Let’s get started</button>
+                        <div className="home__about__social">
+                            {
+                                socialData.map((item, i) => (
+                                    <a key={i} href={item.link} target="_blank">
+                                        {<item.image size={50}/>}
+                                    </a>
+                                ))
+                            }
+                        </div>
+                        
+                        {/* <button onClick={handleNavToContactPage}>Let’s get started</button> */}
                     </Animate>
                 </div>
                 {/* <div className="home__image"><img src={myImage} alt="myImage" className="my-image"/></div> */}

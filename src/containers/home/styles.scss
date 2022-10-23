@@ -39,6 +39,21 @@
                 color: #000;
             }
         }
+        &__social {
+            margin-top: 25px;
+            a {
+                color: var(--yellow-theme-main-color);
+                
+            }
+            a:nth-child(2){
+                margin: 0px 20px;
+            }
+            // a:nth-child(3){
+            //     margin: 0px 20px;
+            // }
+
+        }
+        
 
     }
     

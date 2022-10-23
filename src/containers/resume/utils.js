@@ -9,14 +9,14 @@ export const data = {
 
     education: [
         {
-            title: 'Secondary',
-            subTitle: 'ABC School',
-            describtion: '10th Grade',
+            title: 'Vocational School',
+            subTitle: 'Technical school',
+            describtion: '12th Grade in Science',
         },
-        {
-            title: 'Secondary ',
-            subTitle: 'ABC School of higher education',
-            describtion: 'U12th Grade in Science',
-        },
+        // {
+        //     title: 'Secondary',
+        //     subTitle: 'ABC School of higher education',
+        //     describtion: 'U12th Grade in Science',
+        // },
     ]
 };

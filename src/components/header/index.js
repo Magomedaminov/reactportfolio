@@ -23,14 +23,14 @@ const data = [
         label: 'RESUME',
         to: '/resume'
     },
-    {
-        label: 'PORTFOLIO',
-        to: '/portfolio'
-    },
-    {
-        label: 'CONTACT',
-        to: '/contact'
-    }
+    // {
+    //     label: 'PORTFOLIO',
+    //     to: '/portfolio'
+    // },
+    // {
+    //     label: 'CONTACT',
+    //     to: '/contact'
+    // }
 ]
 
 
@@ -51,7 +51,7 @@ const Header = () => {
             <ul className={`navbar__menu ${toggleIcon ? 'active' : ''}`}>
                 {
                     data.map((item, key) => (
-                        <li key={key} className='navbar__menu__item'>
+                        <li key={key} className='navbar__menu__item' onClick={handleToggleIcon}>
                             <Link className='navbar__menu__item__links' to={item.to}>
                                 {item.label}
                             </Link>

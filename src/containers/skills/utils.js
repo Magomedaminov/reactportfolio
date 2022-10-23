@@ -18,37 +18,26 @@ export const skillsData = [
             
     },
     {
-        label: 'BACK END',
+        label: 'LIBRARIES',
         data: [
             {
-                skillName: 'NODEJS',
-                percentage: '30',
+                skillName: 'REACT JS',
+                percentage: '50',
             },
             {
-                skillName: 'NODEJS',
+                skillName: 'REDUX',
                 percentage: '30',
-            },
-            {
-                skillName: 'NEXTJS',
-                percentage: '10',
-            },
+            }
+            
         ]
     },
     {
-        label: 'DATABASES',
+        label: 'TESTING',
         data: [
             {
-                skillName: 'SQL',
-                percentage: '10',
-            },
-            {
-                skillName: 'MONGO DB',
-                percentage: '20',
-            },
-            {
-                skillName: 'NODEJS',
+                skillName: 'Jest',
                 percentage: '30',
-            },
+            }
         ],
     },
 ]

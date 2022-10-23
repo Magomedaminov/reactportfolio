@@ -4,7 +4,7 @@ import "./styles.scss";
 import { Line } from "rc-progress";
 import { skillsData } from "./utils";
 import PageHeaderContent from "../../components/pageHeaderContent";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { GiSkills } from 'react-icons/gi';
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 
 const Skills = () => {
@@ -12,7 +12,7 @@ const Skills = () => {
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="Skills"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<GiSkills size={40} />}
       />
 
       <div className="skills__content-wrapper">
