@@ -26,9 +26,13 @@ const personalDetails = [
         value: 'm.denis053@gmail.com'
     },
     {
-        label: 'Contact No',
-        value: '+7 951 666 60 20 / +7 747 601 59 76'
+        label: 'Contact WhatsApp',
+        value: '+79516666020'
     },
+    {
+        label: 'Contact No',
+        value: '+77476015976'
+    }
 ];
 
 const jobSammary = `I'm Frontend developer with 6 months experience. 
