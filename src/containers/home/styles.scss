@@ -63,6 +63,9 @@
     .home {
         display: flex;
         align-items: center;
+        &__about__social {
+            text-align: center;
+        }
         &__about h1 {
             text-align: center;
             font-size: 3rem;
@@ -71,6 +74,7 @@
         &__about button {
             width: 240px;
         }
+
     }
 }
 
