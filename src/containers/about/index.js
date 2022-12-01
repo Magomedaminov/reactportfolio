@@ -26,7 +26,7 @@ const personalDetails = [
         value: 'm.denis053@gmail.com'
     },
     {
-        label: 'Contact WhatsApp',
+        label: 'Contact No',
         value: '+79516666020'
     }
 ];
