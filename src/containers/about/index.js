@@ -28,10 +28,6 @@ const personalDetails = [
     {
         label: 'Contact WhatsApp',
         value: '+79516666020'
-    },
-    {
-        label: 'Contact No',
-        value: '+77476015976'
     }
 ];
 

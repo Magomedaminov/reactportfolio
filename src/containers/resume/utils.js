@@ -3,7 +3,7 @@ export const data = {
         {
             title: 'Website development',
             subTitle: 'Saint Petersburg Russia',
-            describtion: 'User Experiance',
+            describtion: 'Development experience',
         },
     ],
 
